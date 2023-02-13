@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="preload" href="fonts/minecraft.ttf">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/shop.js" defer></script>
+    <title>BetterSound</title>
+    <script src="js/global.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="headerUps">
+            <div class="headerUp">
+                <div class="logos">
+                    <img src="assets/logo.svg" class="headerUpImg" alt="logo">
+                    <h1 class="minetext" class="minetext">BetterSound</h1>
+                </div>
+                <div class="sign">
+                    <button id="headerSignUp">Регистрация</button>
+                    <button id="headerSignIn">Войти</button>
+                </div>
+                <div class="headerBurger">
+                    <img class="hBurImg" src="assets/burger.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="burgerMenu w-0">
+            <div class="burMen">
+                <nav class="BurgerNav">
+                    <ul>
+                        <li class="minetext"><a href="index.html">Главная</a></li>
+                        <li class="minetext"><a href="music.html">Музыка</a></li>
+                        <li class="minetext"><a href="#">Магазин</a></li>
+                    </ul>
+                </nav>
+                <div class="burgerSign">
+                    <button id="headerSignUp"><p class="minetext">Регистрация</p></button>
+                    <button id="headerSignIn"><p class="minetext">Войти</p></button>
+                </div>
+            </div>
+            <img class="burCross d-none" src="assets/cross.svg" alt="">
+        </div>
+        <hr class="hrTop">
+        <div class="headerMenus"> 
+            <div class="headerMenu">
+                <nav class="headerMenuNav">
+                    <li class="hmnli minetext"><a href="index.html">Главная</a></li>
+                    <li class="hmnli minetext"><a href="music.html">Музыка</a></li>
+                    <li class="hmnli minetext"><a href="#">Магазин</a></li>
+                    <li class="hmnli minetext"><a href="info.html">О нас</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="search">
+            <div class="categories">
+                <img src="assets/bruger2.svg" alt="">
+            </div>
+            <div class="searchbar">
+                <input type="text" class="searchinput" placeholder="Искать...">
+            </div>
+            <div class="shopCart">
+                <img src="assets/cart.svg" alt="">
+            </div>
+        </section>
+        <section class="goods">
+            <div class="SB catNone">
+                <nav class="sidebar d-none">
+                    <li class="pixel">Наушники</li>
+                    <li class="pixel">Микрофоны</li>
+                    <li class="pixel">Пластинки</li>
+                </nav>
+                <div class="sidebarBack"><img src="assets/back_icon.svg" alt=""></div>
+            </div>
+            <div class="cards">
+                <!-- контент -->
+            </div>
+            <div class="cart cartNone">
+                <div class="cartBack"><img src="assets/cartback.svg" alt=""></div>
+                <div class="cartCont">
+                    <h3 class="cartH d-none pixel">Ваша корзина:</h3>
+                    <ol class="cartUl d-none">
+
+                    </ol>
+                    <button class="cartBuy d-none"><p class="buyText pixel">Купить</p></button>
+                </div>
+            </div>
+        </section>
+        <div class="modalPlace">
+            <!-- модальное окно -->
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <a href="#"><img class="footerImg vk" src="assets/vk.svg" alt=""></a>
+            <a href="#"><img class="footerImg faceb" src="assets/facebook.svg" alt=""></a>
+            <a href="#"><img class="footerImg insta" src="assets/insta.svg" alt=""></a>
+            <a href="#"><img class="footerImg github" src="assets/github.svg" alt=""></a>
+        </nav>
+    </footer>
+</body>
+</html>

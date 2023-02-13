@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Minecraft";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("minecraft"),
+          local("minecraft rus"),
+          local("minecraft rus regular"),
+  
+         url("../fonts/minecraft.ttf")
+}
+
+
+.minetext {
+    color: white;
+    background:url(../assets/textback.jpg);
+    background-attachment:local;
+    background-size: cover;
+    font-family: 'Minecraft';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body, header, main, p {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 37);
+}
+
+body::-webkit-scrollbar, .modalPlace::-webkit-scrollbar, .modalCont::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track, .modalPlace::-webkit-scrollbar-track, .modaCont::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb, .modalPlace::-webkit-scrollbar-thumb, .modalCont::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);    /* цвет плашки */
+    border-radius: 10px;       /* закругления плашки */
+    border-top: 1px solid rgb(61, 58, 58);
+    border-bottom: 1px solid rgb(61, 58, 58); 
+    border-right: 1px solid rgb(61, 58, 58); /* padding вокруг плашки */
+}
+
+a {
+    text-decoration: none;
+}
+
+.pixel {
+    font-family: 'Minecraft';
+}

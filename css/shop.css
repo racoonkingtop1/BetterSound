@@ -1,0 +1,681 @@
+/*main*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.search {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #76B8DE;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 50px;
+    left: 0;
+    z-index: 30;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    flex-grow: 1;
+}
+
+.searchinput {
+    height: 28px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding-left: 20px;
+}
+
+.searchinput::placeholder {
+    font-size: 15px;
+}
+
+.searchinput::target-text {
+    margin: 10px auto 10px;
+}
+
+.shocart {
+    flex-grow: 1;
+}
+
+.categories img {
+    width: 25px;
+    background-color: #206fb8;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+
+.categories img:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.shopCart img {
+    width: 25px;
+    background-color: #206fb8;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 40px;
+    border: 1px solid black;
+}
+
+.shopCart img:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* goods */
+
+.goods {
+    display: flex;
+}
+
+.SB {
+    display: flex;
+    width: 30%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    background-color:rgb(40, 153, 161);
+    text-align: center;
+    transition: 1s all ease-in-out;
+}
+
+.sidebar {
+    width: auto;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 20px 50px;
+    border-bottom: 2px dotted #206fb8;
+}
+
+.cards {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    flex-grow: 3;
+}
+
+.card {
+    margin: 20px 40px;
+    background-color: #76B8DE;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 290px;
+    position: relative;
+}
+
+.cardImg {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cardCont {
+    padding: 10px 20px;
+}
+
+.cardCont h3 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.cardCont p {
+    background-color: unset;
+}
+
+.cardBtns {
+    background-color: unset;
+    display: flex;
+    margin: 10px 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.more {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: unset;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.more:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cardCart {
+    width: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #76B8DE;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cardCart:hover {
+    transition: all 0.4s;
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #5e9dc2;
+}
+
+.cardCart2 {
+    width: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #5e9dc2;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cardCart2:hover {
+    transition: all 0.4s;
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #76B8DE;
+}
+
+.catNone { 
+    width: 0;
+}
+
+/* cart */
+
+.cart {
+    display: flex;
+    background-color: rgb(185, 180, 180);
+    position: relative;
+    right: 0;
+    top: 0;
+    width:400px;
+    transition: 1s all ease-in-out;
+    flex-grow: 1;
+}
+
+.cartCont {
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 400px;
+}
+
+.cartCont h3 {
+    font-size: 25px;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.cartUl {
+    align-items: center;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+
+.cartBuy {
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid rgb(6, 173, 173);
+    border-radius: 10px;
+}
+
+.cartBuy:hover {
+    transition: all 0.4s;
+    transform: scale(1.05);
+    background-color: rgb(115, 221, 186);
+    cursor: pointer;
+}
+
+.buyText {
+    background-color: unset;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.cartNone {
+    width: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.cartLi {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartLi:hover {
+    transition: all 0.4s;
+    background-color: rgb(160, 154, 154);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+
+
+
+/* modal */
+
+.modalPlace {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    overflow-y: scroll;
+    z-index: 102;
+}
+
+.mod {
+    height: 100vh;
+}
+
+.modal {
+    width: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid white;
+    flex-wrap: wrap;
+    background-color: rgb(15, 150, 212);
+    border-radius: 20px;
+    color:rgb(22, 22, 24);
+}
+
+.modalCont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px;
+}
+
+.modalImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(22, 22, 24);
+}
+
+.modalText {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.modalText h3 {
+    text-align: center;
+}
+
+.modalText p {
+    background-color: unset;
+}
+
+.modalText ul {
+    margin-top: 5px;
+    list-style-image:url(../assets/note.svg);
+}
+
+.modalTextli {
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.descr {
+    text-indent: 20px;
+}
+
+.modalContButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 20px;
+    background-color: unset;
+}
+
+.modalContButton button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 165, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Minecraft';
+    color:rgb(22, 22, 24);
+}
+
+.modalContButton button:hover {
+    transition: all 0.3s;
+    background-color: rgb(0, 165, 0);
+    color: azure;
+    cursor: pointer;
+    border-color: azure;
+}
+
+.m-10 {
+    margin-left: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.gray {
+    color:rgb(22, 22, 24);
+    font-weight: bold;
+}
+
+/*footer*/
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.footer nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.footerImg {
+    width: 50px;
+    padding: 10px;
+    margin: 20px 40px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.footerImg:hover {
+    transition: 0.4s;
+    background-image: url(../assets/textback.jpg);
+    background-attachment:local;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 990px) {
+    .cart {
+         width:200px; /**/
+         flex-grow: unset;
+     } 
+     
+     .cartCont {
+         width: 200px;/**/
+     }
+     
+     .cartCont h3 {
+         font-size: 20px; /**/
+     }
+     
+     .cartUl {
+         margin: 14px 0; /**/
+         margin-right: 14px; /**/
+     }
+ 
+     .cartLi {
+         margin: 8px 0; /**/
+         padding: 4px; /**/
+     }
+ 
+     .card {
+         margin: 10px 20px; /**/
+         width: 200px; /**/
+     }
+     
+     .cardImg {
+         height: 150px; /**/
+     }
+     
+     .cardCont {
+         padding: 8px 16px; /**/
+     }
+     
+     .cardBtns {
+         margin: 8px 0; /**/
+     }
+     
+     .more {
+         font-size: 12px; /**/
+         padding: 4px 8px; /**/
+         margin: 0 8px; /**/
+     }
+     
+     .cardCart {
+         width: 16px; /**/
+         top: 10px;/**/
+         right: 10px;/**/
+     }
+ 
+     .cartNone {/**/
+         width: 0;
+     }
+ 
+     .catNone {
+         width: 0;
+     }
+ 
+     .d-none {
+         display: none;
+     }
+ }
+ 
+ @media (max-width: 730px) {  
+    .modalPlace {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mod {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .modal {
+        width: auto;/**/
+        margin: 0;/**/
+        border-radius: 5px;/**/
+    }
+
+    .modalCont {
+        width: auto;/**/
+    }
+    
+    .modalImg img {
+        width: 100%;/**/
+        height: auto;/**/
+    }
+    
+    .crossBtn {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: end;
+    }
+
+    .modalCross { /**/
+        width: 20px;
+        position: relative;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 1px dotted black;
+        border-radius: 5px;
+        background-color: rgb(15, 150, 212, 0.9);
+    }
+ }
+ 
+ @media (max-width: 720px) {
+     .SB {
+         width: 100%;/**/
+         position: absolute;/**/
+         height: 100%;/**/
+         flex-grow: unset; /**/
+         z-index: 51;/**/
+         display: flex;/**/
+         justify-content: center;/**/
+     }
+ 
+     .sidebar {
+         flex-grow: 7;/**/
+     }
+ 
+     .sidebarBack { /**/
+         height:100%;
+         width: 3%;
+         border-left: 2px dotted black;
+         flex-grow: 1;
+         background-color: unset;
+         display: flex;
+         justify-content: center;
+         align-items: start;
+     }
+ 
+     .sidebarBack img {/**/
+         height: auto;
+         width: 100%;
+         margin-right: 15%;
+     }
+ 
+     .sidebarBack:hover {/**/
+         transition: 0.4s;
+         background-color: rgb(78, 167, 173);
+         cursor: pointer;
+     }
+ 
+     .cart {
+         display: flex;/**/
+         justify-content: center;/**/
+         position: absolute;/**/
+         width:100%;/**/
+         height: 100%;/**/
+         z-index: 51;/**/
+         flex-grow: unset; /**/
+     }
+ 
+     .cartBack { /**/
+         height:100%;
+         width: 3%;
+         border-right: 2px dotted black;
+         flex-grow: 1;
+         background-color: unset;
+         display: flex;
+         justify-content: center;
+         align-items: start;
+     }
+ 
+     .cartBack:hover {/**/
+         background-color: rgb(160, 154, 154);
+     }
+ 
+     .cartBack img {/**/
+         height: auto;
+         width: 100%;
+         margin-left: 15%;
+     }
+ 
+     .cartBack img:hover {/**/
+         transition: 0.4s;
+         cursor: pointer;
+     }
+     
+     .cartCont {
+         margin: 0 10px; /**/
+         margin-right: 10%;/**/
+         flex-grow: 7;/**/
+     }
+     
+     .cartCont h3 {
+         font-size: 20px; /**/
+     }
+     
+     .cartUl {
+         margin: 14px 0; /**/
+     }
+     
+     .cartBuy {
+         margin: 0 20px;/**/
+     }
+     
+     .cartLi {
+         margin: 8px 0; /**/
+         padding: 4px; /**/
+     }
+ 
+     .cards {
+         flex-grow: unset; /**/
+     }
+ 
+     .cartNone {/**/
+         width: 0;
+     }
+ 
+     .catNone {
+         width: 0;
+     }
+ 
+     .d-none {
+         display: none;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .searchinput {
+         width: 190px;
+     }
+ }

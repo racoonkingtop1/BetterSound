@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="preload" as="font" href="fonts/minecraft.ttf">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/index.js" defer></script>
+    <script src="js/global.js" defer></script>
+    <title>BetterSound</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headerUps">
+            <div class="headerUp">
+                <div class="logos">
+                    <img src="assets/logo.svg" class="headerUpImg" alt="logo">
+                    <h1 class="minetext" class="minetext">BetterSound</h1>
+                </div>
+                <div class="sign">
+                    <button id="headerSignUp">Регистрация</button>
+                    <button id="headerSignIn">Войти</button>
+                </div>
+                <div class="headerBurger">
+                    <img class="hBurImg" src="assets/burger.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="burgerMenu w-0">
+            <div class="burMen">
+                <nav class="BurgerNav">
+                    <ul>
+                        <li class="minetext"><a href="#">Главная</a></li>
+                        <li class="minetext"><a href="music.html">Музыка</a></li>
+                        <li class="minetext"><a href="shop.html">Магазин</a></li>
+                    </ul>
+                </nav>
+                <div class="burgerSign">
+                    <button id="headerSignUp"><p class="minetext">Регистрация</p></button>
+                    <button id="headerSignIn"><p class="minetext">Войти</p></button>
+                </div>
+            </div>
+            <img class="burCross d-none" src="assets/cross.svg" alt="">
+        </div>
+        <hr class="hrTop">
+        <div class="headerMenus"> 
+            <div class="headerMenu">
+                <nav class="headerMenuNav">
+                    <li class="hmnli minetext"><a href="#">Главная</a></li>
+                    <li class="hmnli minetext"><a href="music.html">Музыка</a></li>
+                    <li class="hmnli minetext"><a href="shop.html">Магазин</a></li>
+                    <li class="hmnli minetext"><a href="info.html">О нас</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="mainInfo">
+            <div class="infoText infoTextUp">
+                <p class="big minetext">Добро пожаловать!</p>
+                <p class="small minetext">Мы - прогрессивный магазин музыкальной техники. Наша команда поможет Вам в любой сложной ситуации.</p>
+            </div>
+
+            <div class="infoText infoTextLeft">
+                <p class="big minetext">Доставка</p>
+                <p class="small minetext">Мы доставим Ваш заказ в любую точку мира. Не сомневайтесь: наши курьеры не сомкнут глаз, пока не исполнят свой курьерский долг!</p>
+            </div>
+        </section>
+
+        <section class="lastNews">
+            <div class="lastNewsBack">
+                <div class="lastNewsCont">
+                    <div class="csrollCont">
+                        <h2 class=" lnconth2 minetext lstnws">Последние товары</h2>
+                        <div class="lastNewsScroll">
+                            <button class="scrollButton prev" id="prev"><</button>
+                            <div class="news">
+                                <div class="newsImg">
+                                    <ul class="img" id="last">
+                                       <!--контент-->
+                                    </ul> 
+                                </div>
+                                <div class="newsText">
+                                    <h3 class="minetext naming" id="naming">Наушники</h3>
+                                </div>
+                                <div class="moreInfoBtn"><p>Подробнее...</p></div> 
+                            </div>
+                            <button class="scrollButton next" id="next">></button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <a href="#"><img class="footerImg vk" src="assets/vk.svg" alt=""></a>
+            <a href="#"><img class="footerImg faceb" src="assets/facebook.svg" alt=""></a>
+            <a href="#"><img class="footerImg insta" src="assets/insta.svg" alt=""></a>
+            <a href="#"><img class="footerImg github" src="assets/github.svg" alt=""></a>
+        </nav>
+    </footer>
+</body>
+</html>

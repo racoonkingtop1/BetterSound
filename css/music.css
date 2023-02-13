@@ -1,0 +1,492 @@
+/*main*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search {
+    position:sticky;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #76B8DE;
+    border-bottom: 1px solid #333;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px 0;
+}
+
+.searchbar img {
+    height: 20px;
+    padding: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+.searchbar img:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.searchinput {
+    height: 28px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding-left: 20px;
+}
+
+.searchinput::placeholder {
+    font-size: 15px;
+}
+
+.searchinput::target-text {
+    padding-left: 10px;
+}
+
+@media (max-width:470px) {
+    .searchinput {
+        height: 28px;
+        width: 90%;
+        border-radius: 30px;
+        border: 1px solid black;
+    }
+}
+
+/* playlists */
+
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.playlists h2 {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline 3px solid #548eaf;
+}
+
+
+.plists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.plist {
+    padding: 10px;
+    border: 1px solid #5592b6;
+    border-right: 3px solid #548eaf;
+    border-bottom: 2px solid #548eaf;
+    margin: 20px;
+    background-color: #76B8DE;
+    border-radius: 20px;
+}
+
+.plist:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+
+.plist img {
+    width: 195px;
+    height: 195px;
+    object-fit: cover;
+    border: 1px solid #5592b6;
+    border-radius: 100%;
+    border-right: 3px solid #548eaf;
+    border-bottom: 2px solid #548eaf;
+
+}
+
+.plist p {
+    padding-top: 10px;
+    text-align: center;
+    background: none;
+    color: black;
+}
+
+/* modal */
+
+.modalPlace {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+    background-color: rgb(0, 0, 0, 0.6);
+    overflow-y: scroll;
+    z-index: 102;
+}
+
+.mplace {
+    height: 100vh;
+}
+
+.modal {
+    width: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid white;
+    flex-wrap: wrap;
+    background-color: rgb(15, 150, 212);
+    border-radius: 20px;
+    color:rgb(22, 22, 24);
+}
+
+.modalCont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px;
+    align-items: center;
+}
+
+.modalTop {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.modalTop img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.modalTop p {
+    background-color: unset;
+    margin: 20px;
+    width: 280px;
+}
+
+.modalText {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.modalText h3 {
+    text-align: center;
+}
+
+.modalText p {
+    background-color: unset;
+}
+
+.modalText ul {
+    margin-top: 5px;
+    list-style-image:url(../assets/note.svg);
+}
+
+.modalTextli {
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.descr {
+    text-indent: 20px;
+}
+
+.bcu {
+    background-color: unset;
+}
+
+
+.modalContButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 20px;
+    background-color: unset;
+}
+
+.iframe {
+    width: 100%;
+    height: 445px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.m-10 {
+    margin-left: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.gray {
+    color:rgb(22, 22, 24);
+    font-weight: bold;
+}
+
+.pink {
+    color: pink;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-a {
+    width: auto;
+}
+
+.df {
+    display: flex;
+}
+
+.smaller {
+    font-size: 15px;
+}
+
+.lighter {
+    color:rgb(54, 49, 49);
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.plistsPlace {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid black;
+    height: 445px;
+}
+
+.tracks {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-right: 4px;
+    width: 100%;
+    height: 445px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    height: fit-content;
+    margin: 2px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.track:hover {
+    outline: 2px solid yellow;
+}
+
+.track:hover .trackImg {
+    opacity:0.6;
+}
+
+.trackImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 5px;
+}
+
+
+
+.playhover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: none;
+}
+
+.playhover--play {
+    background-image: url(../assets/playAudio.png);
+}
+
+.playhover--pause {
+    background-image: url(../assets/pauseAudio.png);
+}
+
+.track:hover .playhover {
+    display: flex;
+    position:absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.track:hover .playhover:hover {
+    cursor: pointer;
+}
+
+.trackNaming {
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px 10px;
+}
+
+.trackNaming p {
+    width: 100%;
+}
+
+.trackLength {
+    margin-right: 20px;
+}
+
+.tracks::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+}
+
+.tracks::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* цвет дорожки */
+}
+
+.tracks::-webkit-scrollbar-thumb {
+    background-color: rgb(5, 136, 175);    /* цвет плашки */
+    border-radius: 10px;       /* закругления плашки */
+    border-top: 1px solid rgb(158, 151, 151);
+    border-bottom: 1px solid rgb(158, 151, 151); 
+    border-right: 1px solid rgb(158, 151, 151); /* padding вокруг плашки */
+}
+
+.audioTrack {
+    display: none;
+}
+
+.musicBar {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 55;
+    background-color: rgb(96, 165, 186); 
+    border-top: 2px solid black;
+}
+
+@media (max-width: 770px) {
+    .trackNaming {
+        width: 50%;
+    }
+
+    .trackNaming p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 760px) {
+    .mplace {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal {
+        padding: 10px; /**/
+    }
+    
+    .modalCont {
+        width: 500px; /**/
+    }
+    
+    .modalTop {
+        gap: 10px; /**/
+        width: auto; /**/
+    }
+    
+    .modalTop img {
+        width: 150px; /**/
+        height: 150px; /**/
+    }
+    
+    .modalTop p {
+        background-color: unset;
+        margin: 20px;
+        width: 204px; /**/
+    }
+}
+
+@media (max-width: 600px) {
+    .modalCont {
+        width: 430px; /**/
+    }
+    
+    .modalTop img {
+        width: 120px; /**/
+        height: 120px; /**/
+    }
+    
+    .modalTop p {
+        margin: 20px 0; /**/
+        font-size: 15px; /**/
+    }
+}
+
+@media (max-width: 600px) {
+    .modalCont {
+        width: 300px; /**/
+    }
+    
+    .modalTop img {
+        width: 80px; /**/
+        height: 80px; /**/
+    }
+    
+    .modalTop p {
+        font-size: 12px; /**/
+        width: 150px; /**/
+    }
+}
+
+/*footer*/
+
